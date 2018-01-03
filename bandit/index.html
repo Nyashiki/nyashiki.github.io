@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf8">
+    <title>3腕バンディット問題</title>
+    <script type="text/javascript" src="bandit.js"></script>
+  </head> 
+  <body>
+    <h3>概要</h3>
+    <p>
+      いま，スロットが3台あり，それぞれの当たりやすさは異なります．  <br>
+      あなたは，この3台のスロットを，全部で50回，回すことができます．<br>
+      頑張って，できるだけ多くのお金を稼いでください．              <br>
+      最初の所持金は3000円で，1回回すごとに100円かかります．        <br>
+      また，スロットが当たると200円手に入ります．                  <br>
+      大当たりで500円手に入ります．                               <br>
+    </p>
+    <h3>遊び場</h3>
+      <p>
+        <input type="button" value="スロット1" onclick="SlotClick(1)">
+        <input type="button" value="スロット2" onclick="SlotClick(2)">
+        <input type="button" value="スロット3" onclick="SlotClick(3)">
+        <br>
+        回す回数 あと <span id="tryRemain">50</span>回  <br>
+        所持金 <span id="money">3000</span>円 <br>
+        <h4>
+          <div align="center">
+            スロット結果: <span id="result">まだ回してない</span>
+          </div>
+        <h4s>
+      </p>
+  </body>
+</html>
