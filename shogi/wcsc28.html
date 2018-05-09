@@ -26,8 +26,8 @@
         <li>学習は教師データの棋譜を再生しながら、1/60の確率でその局面を学習データに採用。</li>
         <li>学習時のミニバッチサイズは1024。</li>
         <li>ネットワーク構成は<a href="https://www.apply.computer-shogi.org/wcsc28/appeal/broaden/broaden.pdf">アピール文章</a>の付録（最終ページ）を参照してください。</li>
-        <li>Policyの直前のConvolutionのフィルター枚数は2枚、Valueの直前は1枚。</li>
-        <li>その他のConvolutionのフィルター枚数は、すべて256枚。</li>
+        <li>Policyの直前のConvolution層のフィルター枚数は2枚、Valueの直前は1枚。</li>
+        <li>その他のConvolution層のフィルター枚数は、すべて256枚。</li>
         <li>Valueの前にある全結合層は256ノード。</li>
         <li>入力は次のようになっています。
           <ul>
@@ -47,7 +47,7 @@
       <ul>
         <li>教師棋譜をやねうら110億局面で学習したモデルとの性能比較</li>
         <li>Residual Blockの数による性能比較</li>
-        <li>Residual Block内のConvolutionの数による性能比較</li>
+        <li>Residual Block内のConvolution層の数による性能比較</li>
         <li>持ち駒で、ある駒を持っている数をレイヤー数ではなくスカラーとして与える</li>
         <li>Alpha Zero風のPolicyの出力を試す。</li>
       </ul>
